@@ -51,10 +51,6 @@ def registerPlayer(name):
       name: the player's full name (need not be unique).
     """
     
-
-    """
-    Sanitize the input!!!
-    """
     conn = connect()
     c = conn.cursor()
     name = str(name)
@@ -99,9 +95,7 @@ def reportMatch(winner, loser):
     """
     conn = connect()
     c = conn.cursor()
-    #name = str(name)
-    #winner = float(winner)
-    #loser = float(loser)
+    #records match participants and winner 
     c.execute("INSERT INTO matches (pid_a, pid_b, result) VALUES (%s, %s, %s);", (winner,loser,winner,))
     conn.commit()
     conn.close()
@@ -137,7 +131,7 @@ def swissPairings():
         player2id = standings[x+1][0]
         player2name = standings[x+1][1]
         pair = (player1id, player1name, player2id,player2name) 
-        # ^ this could be refactored into one line instead of using variables
+        # ^ this could be refactored into one line instead of using variables, but the intent is clearer this way
         
         x = x + 2
         pairings.append(pair)

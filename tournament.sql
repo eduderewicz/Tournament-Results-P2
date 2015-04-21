@@ -32,6 +32,4 @@ select players.pid, players.player_name,
 (select count(*) from matches where matches.pid_a=players.pid or matches.pid_b = players.pid) as matches_played 
 FROM players LEFT OUTER JOIN matches ON (players.pid = matches.pid_a OR players.pid = matches.pid_b)
 order by wins desc; 
-
---CREATE VIEW pairings AS
---select players.pid as matchup_a, players.player_name as matchup_a_name, select players.pid as matchup_b, players.player_name as matchup_b_name
+#left outer join ensures players with 0 matches played have a result
