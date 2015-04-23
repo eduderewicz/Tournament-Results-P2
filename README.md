@@ -5,7 +5,7 @@ Requirements:
 Must have PostgreSQL, Vagrant VM  
   
 clone repo  
-git clone https://github.com/eduderewicz/Tournament-Results-P2.git  
+`git clone https://github.com/eduderewicz/Tournament-Results-P2.git ` 
   
 Execute tournament.sql to create the tournament database from within Vagrant vm:  
 `\i tournament.sql`  
