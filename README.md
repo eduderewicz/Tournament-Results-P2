@@ -4,10 +4,11 @@ Project 2 - Code to simulate a basic Swiss style Tournament with match reporting
 Requirements:
 Must have PostgreSQL, Vagrant VM  
  
-start vagrant
+start vagrant  
   `vagrant up` 
- ssh into vagrant
- `vagrant ssh` 
+ ssh into vagrant  
+ `vagrant ssh`   
+  
 clone repo  
 `git clone https://github.com/eduderewicz/Tournament-Results-P2.git ` 
   
