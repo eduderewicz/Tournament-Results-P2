@@ -5,7 +5,9 @@ Requirements:
 Must have PostgreSQL, Vagrant VM  
  
 start vagrant
-  
+  `vagrant up` 
+ ssh into vagrant
+ `vagrant ssh` 
 clone repo  
 `git clone https://github.com/eduderewicz/Tournament-Results-P2.git ` 
   
