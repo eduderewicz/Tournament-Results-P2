@@ -13,9 +13,12 @@ clone repo
 `git clone https://github.com/eduderewicz/Tournament-Results-P2.git ` 
   
 CD into directory 
-  
+ 
+Enter PSQL:  
+ `psql`  
 Execute tournament.sql to create the tournament database from within Vagrant vm:  
 `\i tournament.sql`  
+  
 This will create the tournament database and necessary tables 
 Exit psql  
 `\q`  
