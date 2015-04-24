@@ -5,7 +5,7 @@ Requirements:
 Must have PostgreSQL, Vagrant VM  
  
 start vagrant  
-  `vagrant up` 
+  `vagrant up`  
  ssh into vagrant  
  `vagrant ssh`   
   
