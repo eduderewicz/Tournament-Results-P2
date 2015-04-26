@@ -97,6 +97,10 @@ def reportMatch(winner, loser):
     c = conn.cursor()
     #records match participants and winner 
     c.execute("INSERT INTO matches (pid_a, pid_b, result) VALUES (%s, %s, %s);", (winner,loser,winner,))
+    #database is designed to handle draws, but I did not implement that part of the assignment. 
+    # Where possible my design is setup to handle some extra credit but I have not implemented it yet
+    #the tests aren't designed for reporting draws and would require rewriting 
+    #easiest implementation would be to update this method to reportmatch(player_1, player_2, result) where result = player_1 or player_2 or draw 
     conn.commit()
     conn.close()
     
